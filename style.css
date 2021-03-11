@@ -1,7 +1,133 @@
+body
+{
+	margin: 0px;
+	background-image: url("bgw.jpg");
+}
+
+p
+{
+	font-family: Trebuchet MS, sans-serif;
+	font-size: large;
+}
+
 #menu
 {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	padding-left: 5%;
+	background: rgb(0, 46, 253);
+	text-align: center;
+	font-family: Rockwell;
+}
+
+#menu img
+{
+	margin-right: 35px;
+}
+
+
+h2
+{
+	text-align: center;
+	border-bottom: 5px solid rgb(33, 155, 255); 
+    line-height: 0.1em;
+    margin: 20px; 
+	font-family: Impact;
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.me{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  li {
+	display: inline;
+	float: left;
+	width: 10%;
+  }
+  
+  li a {
+	display: block;
+	color: rgb(242, 242, 243);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: #111;
+  }
+
+.useCase{
+	float: none;
+	display: inline;
+}  
+
+input[type=text]{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+input[type=text]:focus {
+	background-color: lightblue;
+  }
+
+form{
+	margin-left: 20%;
+	margin-right: 20%;
+	border-radius: 5px;
+  	background-color: #c2bfbf;
+  	padding: 20px;
+}
+
+button {
+	width: 40%;
+	background-color: #0d41af; /* Green */
+	border: 3px solid #0d41af;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+
+  button:hover {
+	background-color: white;
+	color: #0d41af;
+  }
+
+
+.answers
+{
+	text-align: center;
+}
+
+.answers .web
+{
+	font-size: 28px;
+}
+
+#uc
+{
+	margin-left: 20%;
+	margin-right: 20%;
 }
