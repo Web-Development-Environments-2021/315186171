@@ -12,6 +12,8 @@
     menubar: false
   });
 </script>
+
+
 </head>
 <body>
 <div id="menu">
@@ -85,7 +87,7 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="MtYfeWmo"></script>
 <center>
-  <div class="fb-like" data-href="https://www.facebook.com/painharold" data-width="200" data-layout="standard" data-action="like" data-size="large" data-share="false"></div>
+  <div class="fb-like" data-href="https://www.facebook.com/painharold/" data-width="200" data-layout="standard" data-action="like" data-size="large" data-share="false"></div>
 </center>
 </section>
 
@@ -211,18 +213,18 @@
   </span>
     </h2>
     <h3>
-      <form id="contact" action="mailto:yotamkomp@gmail.com" method="post" enctype="text/plain">
+      <form action="mailto:yotamkomp@gmail.com?subject=opinion about your website" method="post" enctype="text/plain">
         Name:<br>
         <input type="text" name="name"><br>
         E-mail:<br>
-        <input type="text" name="mail"><br>
+        <input type="email" name="mail"><br>
         Comment:<br>
-        <textarea id="myTextarea" form="contact"></textarea><br/><br/>
+        <textarea name="message" id="myTextarea"></textarea><br/><br/>
         <center>
         <button type="submit" value="Send">Send</button>
         <button type="reset" value="Reset">Reset</button>
       </center>
-        </form>
+      </form>
     </h3>
 </section>
 
