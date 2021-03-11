@@ -97,7 +97,7 @@ form{
 
 button {
 	width: 40%;
-	background-color: #0d41af; /* Green */
+	background-color: #0d41af; 
 	border: 3px solid #0d41af;
 	color: white;
 	padding: 16px 32px;
@@ -132,3 +132,15 @@ button {
 	margin-right: 20%;
 }
 
+.mySlides {display:none;}
+
+.slide-bot
+{
+	width: 195px;
+}
+
+#slide-show
+{
+	margin-left: 20%;
+	margin-right: 20%;
+}

@@ -49,26 +49,39 @@
 <br/>
 <br/>
 <h2><span>My Photos</span></h2>
-<table border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#111111">
-  <tbody>
-    <tr>
-      <td width=50%>
-        <img src="pic1.jpg" width="300" height="300"/>
-      </td>
-      <td width=50%>
-        <img src="pic2.jpg" width="300" height="300"/>
-      </td>
-    <tr>
-      <td width=50%>
-        <img src="pic3.jpg" width="300" height="300"/>
-      </td>
-      <td width=50%>
-        <img src="pic4.jpg" width="300" height="300"/>
-      </td>
-    </tr>
-    </tr>
-  </tbody>
-</table>
+
+<div id="slide-show" align="center">
+  <img class="mySlides" src="pic1.jpg" style="width:400px" height="400px">
+  <img class="mySlides" src="pic2.jpg" style="width:400px" height="400px">
+  <img class="mySlides" src="pic3.jpg" style="width:400px" height="400px">
+  <img class="mySlides" src="pic4.jpg" style="width:400px" height="400px">
+  <img class="mySlides" src="meme.jpg" style="width:400px" height="400px">
+
+  <button class="slide-bot" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slide-bot" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+
 </section>
 
 <section id="playlist" class="section">
@@ -144,17 +157,17 @@
   <tr>
     <td width="20%">
       <h3>
-        search engines retrieve macro contents. Search is very fast but many times results are inaccurate or more than users can chew.
+        search engines retrieve macro contents.<br> Search is very fast but many times results are inaccurate or more than users can chew.
       </h3>
     </td>
     <td width="20%">
       <h3>
-        search engines retrieve tags with micro contents. The process of tagging is manual, tedious and covers negligible percents of the WWW.
+        search engines retrieve tags with micro contents.<br> The process of tagging is manual, tedious and covers negligible percents of the World Wide Web.
       </h3>
     </td>
     <td width="20%">
       <h3>
-      search engines will retrieve micro content texts which were tagged automatically.This implies translating billions of Web 1.0 macro contents into micro contents. The result could be more precise search because tagging can solve part of the ambiguity that homonyms and synonyms introduce into the process of Search. 
+      search engines will retrieve micro content texts which were tagged automatically. <br>This implies translating billions of Web 1.0 macro contents into micro contents. <br>The result could be more precise search because tagging can solve the part of the ambiguity that synonyms and homonyms introduce into the process of Searching. 
       </h3>
     </td>
   </tr>
